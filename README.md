@@ -35,32 +35,39 @@
      - `export TURTLEBOT3_MODEL=burger`
      - `roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch`
      - 
-      ![burger robot with Empty world]()
+      ![burger robot with Empty world](https://github.com/mo7ammed-saleh/Robot_Navigation_Using_SLAM-ROS/blob/main/Simulation%20img/1-%20Waffle%20Robot%20(Empty%20World).png)
      
    - TurtleBot3 World with a robot called "waffle"
      - `export TURTLEBOT3_MODEL=waffle`
      - `roslaunch turtlebot3_gazebo turtlebot3_world.launch`
      -  
-      ![waffle robot with TurtleBot3 world]()
+      ![waffle robot with TurtleBot3 world](https://github.com/mo7ammed-saleh/Robot_Navigation_Using_SLAM-ROS/blob/main/Simulation%20img/2-%20TurtleBot3%20World.png)
       
    - TurtleBot3 House with a robot called waffle_pi
       - `export TURTLEBOT3_MODEL=waffle_pi`
       - `roslaunch turtlebot3_gazebo turtlebot3_house.launch`
       -  .
-      ![waffle_pi robot with TurtleBot3 world]()
+      ![waffle_pi robot with TurtleBot3 house](https://github.com/mo7ammed-saleh/Robot_Navigation_Using_SLAM-ROS/blob/main/Simulation%20img/3-%20TurtleBot3%20House.png)
       
 6. We will choose one of the previous robot which is waffle and we weill cintrol it usit the keybored keys  W: Forward,  A: Left, S:Stop, D: Right, X:Backward. So, Run the previous comand for waffle robot then open new terminal and run the following command:
    - `roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch` 
 
+______________________________________________________________________________________________________________________
+7. **Now**, close everthing and lets use SLAM simulation to creat the a map for our world, and then save the map with help of lidar sensor. There are 3 Gazebo environments are prepared as mentioned in step 5, but for creating a map with SLAM, it is recommended to use either TurtleBot3 World or TurtleBot3 House. So, I will use TurtleBot3 World with a robot called "waffle" to creat the map and save it.
 
-7. Now, lets use SLAM simulation to creat the a map for our world and then save the map with help of lidar sensor. There are 3 Gazebo environments are prepared as mentioned in step 5, but for creating a map with SLAM, it is recommended to use either TurtleBot3 World or TurtleBot3 House. So, I will use TurtleBot3 World with a robot called "waffle" to creat map and save it.
    - Lunch the Gazebo environment with waffle robot `export TURTLEBOT3_MODEL=waffle` then `roslaunch turtlebot3_gazebo turtlebot3_world.launch`
    - Open new terminel to Run SLAM Node `export TURTLEBOT3_MODEL=waffle` then `roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping`
-   - Open a new terminal to control the waffel robot and scan the area using lidar sensor `export TURTLEBOT3_MODEL=waffle` then ` roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch`. (in the terminal we will control the robot direction using W,A,S,D,X keybored keys.
-   -
+   - Open a new terminal to control the waffel robot and scan the area using lidar sensor `export TURTLEBOT3_MODEL=waffle` then ` roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch`. (in the terminal we will control the robot direction using W,A,S,D,X keybored keys).
+  
+   - 
+    ![SLAM Node](https://github.com/mo7ammed-saleh/Robot_Navigation_Using_SLAM-ROS/blob/main/Simulation%20img/4-%20Run%20SLAM%20Node.png)
+   
 8. When the map is created successfully in Rviz, open new terminal and save it using the command `rosrun map_server map_saver -f ~/map` 
    
-   - ![Saved Map]()
+   - 
+   ![Saved Map](https://github.com/mo7ammed-saleh/Robot_Navigation_Using_SLAM-ROS/blob/main/Simulation%20img/Saved%20map.png)
+
+9. Task in Done :heart_eyes:
  
 
       
