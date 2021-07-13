@@ -46,7 +46,7 @@
    - TurtleBot3 House with a robot called waffle_pi
       - `export TURTLEBOT3_MODEL=waffle_pi`
       - `roslaunch turtlebot3_gazebo turtlebot3_house.launch`
-      -  .
+      -  
       ![waffle_pi robot with TurtleBot3 house](https://github.com/mo7ammed-saleh/Robot_Navigation_Using_SLAM-ROS/blob/main/Simulation%20img/3-%20TurtleBot3%20House.png)
       
 6. We will choose one of the previous robot which is waffle and we weill cintrol it usit the keybored keys  W: Forward,  A: Left, S:Stop, D: Right, X:Backward. So, Run the previous comand for waffle robot then open new terminal and run the following command:
