@@ -30,7 +30,7 @@
     - `cd ~/catkin_ws/src/`
     - `git clone -b melodic-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git`
     - `cd ~/catkin_ws && catkin_make`
-    - Then write `cd` or open new terminal and write `source ~/catkin_ws/devel/setup.bash`
+    - Then write `cd` or open new terminal and write `source ~/catkin_ws/devel/setup.bash` or use `echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc`
  
 
  5. Launch Simulation World.There are 3 simulation environments are prepared for TurtleBot3 and I will lunch one by one just for testing (we can choose one of them later).
